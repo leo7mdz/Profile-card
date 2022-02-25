@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  margin: 0;
+  background-color: whitesmoke;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.card__header {
+  background-image: url(/assets/pattern.svg);
+  text-align: center;
+  height: 120px;
+  position: relative;
+}
+
+.card__description {
+  text-align: center;
+}
+.card__image {
+  border-radius: 50%;
+  border: 4px solid whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.card__name {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  padding-top: 35px;
+  margin-bottom: 0;
+}
+
+.card__age,
+.card__live {
+  color: #808080;
+  font-weight: 200;
+  font-family: serif;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(235, 232, 232, 0.9);
+}
+
+.card__stats {
+  text-align: center;
+}
+
+.card__number {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  margin-bottom: 3px;
+}
+
+.card__follows {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(88, 77, 77);
+  margin: 0;
+}
